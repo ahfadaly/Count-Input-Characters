@@ -1,0 +1,46 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+a:focus,
+button:focus,
+input:focus {
+  box-shadow: none !important;
+}
+
+.count_characters input {
+  padding: 15px;
+  width: 100%;
+  border: none;
+  border-bottom: 2px solid #d7d7d7;
+  background-color: #fbfbfb;
+  border-radius: 0;
+}
+input:focus {
+  outline: none !important;
+  border-color: #d7d7d7 !important;
+  background-color: #fbfbfb !important;
+}
+.count_characters .progress {
+  background-color: #2b8ad7;
+  height: 2px;
+  width: 0;
+  display: block;
+  position: relative;
+  top: -2px;
+  transition: 0.5s;
+}
+.count_characters .count {
+  display: block;
+  text-align: right;
+  font-size: 12px;
+  padding: 5px;
+  font-weight: bold;
+}
+.zero {
+  font-weight: bold;
+  color: red;
+}
